@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<a class="btn btn-secondary" type="button" href="Home.html">HOME</a>
+
+<img src="logo1.png" alt="Image" height="150" width="250">
+
+<hr style="margin-top: -3px;"/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.dropbtn {
+  background-color: #00BFFF;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: -120px;
+  left: 1100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFF0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #00BFFF;}
+
+}
+
+
+</style>
+
+<div class="dropdown">
+    <button class="dropbtn"> Budgeting Help</button>
+    <div class="dropdown-content">
+        <a href="BudgetRent.html" target="_blank"> Rent and Utilities</a>
+        <a href="BudgetGroceries.html" target="_blank"> Groceries</a>
+        <a href="BudgetLoans.html" target="_blank">Student Loans</a>
+        <a href="BudgetInsurance.html" target="_blank">Insurance</a>
+        <a href="BudgetEntertainment.html" target="_blank">Entertainment</a>
+    </div>
+</div>
+<style>
+.mySlides {display:all;}
+
+
+</style>
+<body>
+<center>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides"
+             src="https://newyorkyimby.com/wp-content/uploads/2019/09/LOSUNY-New-Paltz-EIH-696-777x492.jpg" height="400"
+             width="1200">
+        <img class="mySlides"
+             src="https://sites.newpaltz.edu/news/wp-content/uploads/sites/24/2017/09/20160922-5_Atrium-Shoot_897_JB.jpg"
+             height="400" width="1200">
+        <img class="mySlides" src="https://collegesofdistinction.com/wp-content/uploads/2018/07/suny-new-paltz-3.jpg"
+             height="400" width="1200">
+        <img class="mySlides" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/ee/50/36/suny-new-paltz-ny.jpg"
+             height="400" width="1200">
+        <img class="mySlides"
+             src="https://nphawks.com/common/controls/image_handler.aspx?thumb_id=13&image_path=/images/2015/7/21/New_Turf.png"
+             height="400" width="1200">
+</center>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); 
+}
+
+
+</script>
+
+
+</body>
+<head>
+    <title> Tips for Saving Money After College </title>
+
+    <center><h3 style="color:#1D10B5;">Tips for Saving Money After College </h3>
+        <p style="color:#DD6F1B; max-width: 500px;"> Budgeting is a useful concept. To start, add up the essentials,
+            like your rent, utilities, groceries, transportation, student loans and a car loan. This will let show you
+            the amount of money you have left to spend each month and what is the most expensive. </p>
+
+        <p style="color:#DD6F1B; max-width: 500px;"> The Budgeting Help drop down bar provides more information on how
+            to save money by splitting it up into different categories.</p>
+    </center>
+</head>
+
+
+</html>

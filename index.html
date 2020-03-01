@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-t, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title> MoneyJJAAM - Campus Programs</title>
+    <link href="index_page.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<a class="btn btn-secondary" type="button" href="Home.html">HOME</a>
+
+<div class="container">
+    <h1> Campus Programs: </h1>
+    <img src="logo1.png" alt="Logo" height="150" width="250">
+    <p>I am interested in learning about:</p>
+    <center>
+        <div>
+            <button class="btn btn-secondary" type="button" onclick="ac2()">AC^2</button>
+            <button class="btn btn-secondary" type="button" onclick="eop()">Educational Opportunity Program</button>
+            <button class="btn btn-secondary" type="button" onclick="smp()">Scholars Mentorship Program</button>
+
+        </div>
+    </center>
+
+
+    <div class="container" id="element1">
+        <b>What is the AC^2 Program?</b>
+        <p>AC^2 stands for the AMP and CSTEP Community at SUNY New Paltz. The program is dedicated to
+            assisting student of Latinx or Black backgrounds who also exhibit significant financial need.
+            One of their resources includes the "Lending Library", which guarentees each student at least
+            one free STEM textbook for the semester. They also offer scholarships and awards for those that
+            are active in the program.
+        </p>
+        <b>Stop by Science Hall 214 with any questions!</b>
+    </div>
+    <div class="container" id="element2">
+        <b> What is the Educational Opportunity Program?</b>
+        <p> EOP provides academic and financial support for those who do not meet the general admission
+            criteria , but have the potential to earn a college degree. Most students admitted to the program
+            are first generation college students.
+        </p>
+        <b>Common Misconception:</b>
+        <p>This program is not designated for Black/Latinx students. It is for all students who meet the academic
+            and financial requirements.
+        </p>
+    </div>
+    <div class="container" id="element3">
+        <b>What is the Scholar's Mentorship Program?</b>
+        <p> SMP is a multicultural program, funded by the Black Studies Department, that addresses
+            the educational disparities of historically underrepresented students of SUNY New Paltz. First-Year students
+            are assigned a both a peer and faculty mentor to help ease their transition to New Paltz.
+            They also provide scholarship awards and academic recognition awards throughout the year.
+        </p>
+    </div>
+</div>
+<script>
+            var a = document.getElementById("element1");
+            var b = document.getElementById("element2");
+            var c = document.getElementById("element3");
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+
+            function ac2(){
+                b.style.display = "none";
+                c.style.display = "none";
+                if(a.style.display == "none"){
+                    a.style.display = "block";
+                }else{
+                a.style.display =  "none";
+                }
+            }
+            function eop(){
+                a.style.display = "none";
+                c.style.display = "none";
+                if(b.style.display == "none"){
+                    b.style.display = "block";
+                }else{
+                b.style.display =  "none";
+                }
+            }
+            function smp(){
+                a.style.display = "none";
+                b.style.display = "none";
+                if(c.style.display == "none"){
+                    c.style.display = "block";
+                }else{
+                c.style.display =  "none";
+                }
+            }
+
+
+</script>
+</body>
+</html>

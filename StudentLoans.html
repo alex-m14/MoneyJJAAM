@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-t, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title> MoneyJJAAM-Student Loans</title>
+    <link rel="stylesheet" href="SLstyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<a class="btn btn-secondary" type="button" href="Home.html">HOME</a>
+<div class="container">
+    <h1> Student Loans </h1>
+
+
+    <p> I want to find out more about:</p>
+    <center>
+        <div id="buttons">
+
+            <button class="btn btn-secondary" type="button" onclick=subsidized()>Subsidized Loans</button>
+            <button class="btn btn-secondary" type="button" onclick="unsubsidized()">Unsubsidized Loans</button>
+            <button class="btn btn-secondary" type="button" onclick="plusLoans()">Direct PLUS Loans</button>
+            <button class="btn btn-secondary" type="button" onclick="privateLoans()">Private Loans</button>
+        </div>
+    </center>
+
+    <div class="container" id="element1">
+        <h4><u>Subsidized Loans</u></h4>
+        <b>What is it?</b><br>
+        <p>A loan is money lent from the government that must be repaid after </p>
+        <b>Who is eligible?</b><br>
+        <p>Undergraduate students who demonstrate financial need</p>
+
+    </div>
+    <div class="container" id="element2">
+        <h4><u>Unsubsidized Loans</u></h4>
+        <b>What is it?</b><br>
+        <p>A loan is money lent from the government that must be repaid after </p>
+        <b>Who is eligible?</b><br>
+        <p>All Undergraduate, Graduate, & Professional Students</p>
+    </div>
+    <div class="container" id="element3">
+        <h4><u>Direct PLUS Loans</u></h4>
+        <b>What is it?</b><br>
+        <p>A loan is money lent from the government that must be repaid after </p>
+        <b>Who is eligible?</b><br>
+        <p>Graduate Students, Professional Students, & Parents of dependent undergraduate students.</p>
+        <p>**Credit Check is required**<br>People who have an <i>adverse credit history</i> must meet additional
+            requirements</p>
+    </div>
+    <div class="container" id="element4">
+        <h4><u>Private Loans</u></h4>
+        <b>What is it?</b><br>
+        <p>These loans are not funded by the government but by a bank, credit union, state agency, or the school you are
+            enrolling in</p>
+        <b>Who is eligible?</b><br>
+        <>
+    </div>
+</div>
+<script>
+            var a = document.getElementById("element1");
+            var b = document.getElementById("element2");
+            var c = document.getElementById("element3");
+            var d = document.getElementById("element4");
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            function subsidized(){
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "none";
+                if(a.style.display == "none"){
+                    a.style.display = "block";
+                }else{
+                a.style.display =  "none";
+                }
+            }
+            function unsubsidized(){
+                a.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "none";
+                if(b.style.display == "none"){
+                    b.style.display = "block";
+                }else{
+                b.style.display =  "none";
+                }
+            }
+            function plusLoans(){
+                a.style.display = "none";
+                b.style.display = "none";
+                d.style.display = "none";
+                if(c.style.display == "none"){
+                    c.style.display = "block";
+                }else{
+                c.style.display =  "none";
+                }
+            }
+            function privateLoans(){
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                if(d.style.display == "none"){
+                    d.style.display = "block";
+                }else{
+                d.style.display =  "none";
+                }
+            }
+
+</script>
+</body>
+</html>

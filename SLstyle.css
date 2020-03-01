@@ -1,0 +1,40 @@
+#element1{
+    width:85%;
+    padding: 25% 0;
+    text-align: center;
+    background-color: #a2dba4;
+    border-radius: 25px;
+    margin-top:20px;
+}
+#element2{
+    width:85%;
+    padding: 25% 0;
+    text-align: center;
+    background-color: #a2c9db;
+    border-radius: 25px;
+    margin-top:20px;
+}
+#element3{
+    width:85%;
+    padding: 25% 0;
+    text-align: center;
+    background-color: #bba2db;
+    border-radius: 25px;
+    margin-top:20px;
+}
+#element4{
+    width:85%;
+    padding: 25% 0;
+    text-align: center;
+    background-color: #dba2af;
+    border-radius: 25px;
+    margin-top:20px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
